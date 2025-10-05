@@ -21,41 +21,57 @@ body {
     scroll-snap-align: start;
 }
 .name {
-    font-size: 70px;
+    font-size: 60px;
     font-weight: 300;
-    padding-left: 200px;
+    padding-left: 70px;
     padding-top: 150px;
     color: white;
     margin: 0; 
 }
 .subtitle {
-    padding-left: 220px; 
+    padding-left: 90px; 
     margin-top: 10px;   
 }
 .subtitle p {
     margin: 0;           
     line-height: 1.4;    
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 300;
     color: white;
 }
 .about {
-    background-color: #424242; 
-    height: 100vh;          
+    background-color: #424242;
     width: 100%;            
     display: flex;
     flex-direction: column;   
     justify-content: flex-start; 
     align-items: flex-start;
-    padding-left: 200px;       
+    padding-left: 70px;       
     padding-top: 150px;       
-    color: white;           
+    color: white;  
+    min-height: 100vh;
+    box-sizing: border-box;
 }
+.about-subtitle{
+    margin-top: 10px;  
+    padding-left: 0; 
+    text-align: left;
+}
+.about-subtitle p {
+    margin: 0;           
+    line-height: 1.4;    
+    font-size: 16px;
+    font-weight: 300;
+    color: white;
+}
+       
+
 .about h2 {
-    font-size: 80px;
+    font-size: 60px;
     font-weight: 300;
     margin: 0;                
 }
+
 .skills-logos {
     display: flex;
     align-items: center;
@@ -80,17 +96,21 @@ body {
 
 .background-card {
     background-color: rgba(53, 53, 53, 0.9); 
-    padding: 50px; 
+    padding: 50px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 
-    margin-left: auto;
-    margin-right: 200px;
-    margin-top: -200px; 
-    width: 300px;
+    width: 230px;          
+    max-width: 300px;     
+    height: auto;          
     text-align: center;
     color: white;
+
+    margin-left: auto;      
+    margin-right: 50px;     
+    margin-top: -200px;     
 }
+
 
 .background-card h2 {
     margin-bottom: 20px;
@@ -104,18 +124,20 @@ body {
     gap: 15px;
 }
 .contact-card {
-  background-color: rgba(53, 53, 53, 0.9);
-  padding: 30px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-  margin-top: 30px;
+  background-color: rgba(53, 53, 53, 0.9); 
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 
-  margin-left: auto;
-  margin-right: 440px;
+    width: 300px;          
+    max-width: 400px;     
+    height: auto;          
+    text-align: center;
+    color: white;
 
-  width: 300px;
-  text-align: left;
-  color: white;
+    margin-left: auto;      
+    margin-right: 50px;     
+    margin-top: -300px; 
 }
 
 .contact-card h2 {
@@ -154,18 +176,7 @@ body {
   font-weight: 300;
 }
 
-.about-subtitle{
-    margin-top: 10px;  
-    padding-left: 0; 
-    text-align: left;
-}
-.about-subtitle p {
-    margin: 0;           
-    line-height: 1.4;    
-    font-size: 20px;
-    font-weight: 300;
-    color: white;
-}
+
 
 
 
