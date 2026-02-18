@@ -1,3 +1,8 @@
+html {
+    scroll-behavior: smooth;
+
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -6,6 +11,33 @@ body {
     scroll-snap-type: y mandatory;
     overflow-y: scroll;
     height: 100%;
+    background-color: #424242;
+}
+.navbar {
+    padding-top: 30px;
+    background-color: #424242;
+    padding-right: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-right a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+}
+.nav-left {
+    padding-left: 30px;
+}
+.nav-left span {
+    font-size: 24px;
+    font-weight: bold;
+}
+.nav-left span.w1 {
+    color: white;
+}
+.nav-left span.w2 {
+    color: #02eeff; 
 }
 .content {
     width: 100%;
@@ -15,28 +47,69 @@ body {
 .main {
     height: 100vh;
     display: flex;
-    flex-direction: column; 
+    flex-direction: row; 
     align-items: flex-start;
     background-color: #424242;
     scroll-snap-align: start;
+    
+}
+.sub-main {
+    padding-top: 140px; 
+    padding-left: 100px;
 }
 .name {
+    font-size: 30px;
+    color: white;
+    font-weight: lighter;
+    padding-top: 150px;
+    padding-left: 70px;
+    margin: 0;
+    
+}
+.name1 {
     font-size: 60px;
     font-weight: 300;
     padding-left: 70px;
-    padding-top: 150px;
     color: white;
     margin: 0; 
+    letter-spacing: 3px;
+}
+.name2 {
+    font-size: 72px;
+    padding-left: 70px;
+    color: #02eeff; 
+    margin: 0; 
+    font-weight: 900;
+    letter-spacing: 3px;
+    font-family: 'League Spartan', sans-serif;
+}
+.names p {
+    color: white;
+    font-weight: lighter;
+    padding-left: 70px;
 }
 .subtitle {
-    padding-left: 90px; 
+    padding-left: 70px; 
     margin-top: 10px;   
 }
 .subtitle p {
     margin: 0;           
     line-height: 1.4;    
     font-size: 16px;
+    font-weight: 300;   
+    color: white;
+}
+.skills {
+    background-color: #424242;
+    height: 60vh;
+    padding: 50px 0;
+}
+
+.skills h2 {
+    font-size: 30px;
     font-weight: 300;
+    text-align: center;
+    margin: 0;                
     color: white;
 }
 .about {
@@ -65,7 +138,9 @@ body {
     color: white;
 }
        
-
+.para-space {
+    margin-top: 50px;   
+}
 .about h2 {
     font-size: 60px;
     font-weight: 300;
@@ -79,102 +154,115 @@ body {
     margin-top: 20px;
 
 }
-.logo {
-    width: 50px;
-    height: 50px;
+.skill-item {
+    text-align: center;
+    position: relative;
+    height: 300px;
+}
+.skills-logos img:hover {
+    transform: scale(1.2);
+}
+.skills-logos img {
+    position: absolute;
     transition: transform 0.3s;
 }
-
-.logo:hover {
-    transform: scale(1.2); 
+.skill-logo1{
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    transition: transform 0.3s;
+    cursor: pointer;
+    left: 200px;
+    top: 52px;
 }
-.para-space {
-    margin-top: 50px;   
+.skill-logo2{
+    position: absolute;
+    width: 180px;
+    height: 140px;
+    transition: transform 0.3s;
+    cursor: pointer;
+    top: 45px;
+    left: 400px;
 }
-
-
-
-.background-card {
-    background-color: rgba(53, 53, 53, 0.9); 
-    padding: 50px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-
-    width: 230px;          
-    max-width: 300px;     
-    height: auto;          
+.skill-logo3{
+    width: 240px;
+    height: 250px;
+    transition: transform 0.3s;
+    cursor: pointer;
+    bottom: 60px;
+    left: 650px;
+}
+.skill-logo4{
+    width: 150x;
+    height: 100px;
+    transition: transform 0.3s;
+    cursor: pointer;
+    top: 70px;
+    left: 950px;
+}
+.skills h1 {
+    white-space: pre-line;
+    position: absolute;
+    margin-top: 20px;
     text-align: center;
+    font-size: 15px;
     color: white;
+    font-weight: lighter;
 
-    margin-left: auto;      
-    margin-right: 50px;     
-    margin-top: -200px;     
 }
 
+.skill-item:nth-child(1) h1 { position: absolute; top: 172px; left: 160px; width: 200px;}
+.skill-item:nth-child(2) h1 { top: 172px; position: absolute;  left: 390px; width: 200px;}
+.skill-item:nth-child(3) h1 { top: 172px; position: absolute; left: 650px; width: 250px;}
+.skill-item:nth-child(4) h1 { top: 172px; position: absolute; left: 950px; width: 200px;}
 
-.background-card h2 {
-    margin-bottom: 20px;
-    font-size: 28px;
-    font-weight: 400;
-}
-.background-card .skills-logos {
-    display: flex-start;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 15px;
-}
-.contact-card {
-  background-color: rgba(53, 53, 53, 0.9); 
-    padding: 50px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 
-    width: 300px;          
-    max-width: 400px;     
-    height: auto;          
+
+.contact h2 {
+    font-size: 30px;
+    font-weight: 300;
     text-align: center;
+    margin: 0;                
     color: white;
-
-    margin-left: auto;      
-    margin-right: 50px;     
-    margin-top: -300px; 
+    padding-bottom: 20px;
 }
-
-.contact-card h2 {
-  margin-bottom: 20px;
-  font-size: 28px;
-  font-weight: 400;
-  
-}
-
-.social-links {
+.contact-links {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 20px;
+  padding-bottom : 50px;
 }
-
+.contact-links a,
 .social-email {
   display: flex;
   align-items: center;
   gap: 10px;
+  text-decoration: none; 
+  color: white;
+  font-size: 16px;
+  font-weight: 300;
 }
 
 .social-logo {
   width: 40px;
   height: 40px;
-  transition: transform 0.3s;
   cursor: pointer;
+  transition: transform 0.3s;
 }
 
 .social-logo:hover {
   transform: scale(1.2);
 }
 
+.github-text,
+.linkedin-text,
 .email-text {
   color: white;
-  font-size: 16px;
-  font-weight: 300;
 }
+
+
+
 
 
 
